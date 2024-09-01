@@ -1,0 +1,126 @@
+h1 {
+  font-family: $sfDisplay;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+}
+
+h2 {
+  font-family: $sfDisplay;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+h3 {
+  font-family: $sfDisplay;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  &.big {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
+  }
+}
+
+h5 {
+  font-family: $sfDisplay;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+}
+
+h6 {
+  &.sup {
+    font-family: $sfDisplay;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+    padding: 11px 28px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: $main;
+  }
+}
+p {
+  &.big {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 160%;
+  }
+  &.sm {
+    font-size: 18px;
+    line-height: 160%;
+  }
+}
+.main {
+  overflow: hidden;
+  padding-top: 155px;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $sfDisplay;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &.primary {
+    border-radius: 50px;
+    background-color: $primary;
+    color: $white;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 19px 20px 19px 40px;
+    &:hover {
+      opacity: 1;
+      background-color: $main;
+    }
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+}
+.moreLink {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+  color: $primary;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &.big {
+    font-weight: 700;
+    svg {
+      margin-left: 22px;
+    }
+  }
+  &:hover {
+    color: $main;
+    svg {
+      transform: translate(3px, -3px);
+      color: $main;
+    }
+  }
+  svg {
+    width: 25px;
+    height: 25px;
+    color: $primary;
+    transition: 0.3s ease;
+    margin-left: 5px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
